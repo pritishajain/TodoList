@@ -22,7 +22,7 @@ const TodoDisplay = () => {
     if (!isLoggedIn) {
       navigate('/login');
     }
-  }, [])
+  }, [isLoggedIn]) 
 
   const changeInputValue = (event: React.ChangeEvent<HTMLInputElement>) => {
     setData(event.target.value);
@@ -73,7 +73,7 @@ const TodoDisplay = () => {
 
             <div className="show-list">
               <ul>
-                {active.map((value, key) => {
+                {active.map((value) => {
                   return (
                     <ToDoList
                       key={value.id}

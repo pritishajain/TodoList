@@ -16,19 +16,21 @@ const List = () => {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
+  const { text } = location.state as stateType || {};
 
-   useEffect(() => {
+  useEffect(() => {
     if (!isLoggedIn) {
       navigate('/login');
     }
   }, []);
 
+  if (!isLoggedIn) {
+    return null;
+  }
   interface stateType {
     text: string;
   }
-
-  const location = useLocation();
-  const { text } = location.state as stateType;
 
   let arrayDataItems;
 
@@ -60,7 +62,7 @@ const List = () => {
       </li>
     ));
   } else if (text === "Completed List") {
-    arrayDataItems = complete.map((item, key) => (
+    arrayDataItems = complete.map((item) => (
       <li key={item.id}>
         <div className="list-items">
           <div className="list-element">{item.title}</div>
@@ -74,7 +76,7 @@ const List = () => {
       </li>
     ));
   } else if (text === "Recycle Bin") {
-    arrayDataItems = recycleBin.map((item, key) => (
+    arrayDataItems = recycleBin.map((item) => (
       <li key={item.id}>
         <div className="list-items">
           <div className="list-element">{item.title}</div>
