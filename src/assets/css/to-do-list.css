@@ -1,0 +1,52 @@
+.list-style {
+  color: aliceblue;
+  font-size: 20px;
+  list-style-type: square;
+  display: flex;
+  border-bottom: 1px solid rgb(70, 70, 80);
+  margin: 10px;
+}
+.fa-check {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+}
+.fa-times {
+  justify-content: center;
+  display: flex;
+  flex: 1;
+}
+.list-text {
+  border-radius: 10px;
+  flex: 10;
+  font-family: "Julee", cursive;
+  font-size: 30px;
+  font-weight: 400;
+}
+.fa-check:hover {
+  color: green;
+}
+.fa-times:hover {
+  color: red;
+}
+.fa {
+  position: relative;
+  display: inline-block;
+}
+.tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 10px;
+  position:absolute;
+  width: 80px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+.fa:hover .tooltip{
+  visibility: visible;
+}

@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.home {
+  display: flex;
+  font-size: 25px;
+  padding: 5px;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: rgb(179, 165, 165);
+  text-decoration: none;
+  font-weight: 700;
+}
+.home:hover {
+  border-bottom: 2px solid aqua;
+}

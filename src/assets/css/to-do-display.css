@@ -1,0 +1,125 @@
+.head {
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.heading {
+  margin: auto;
+  background-color: rgb(48, 48, 59);
+  width: fit-content;
+  padding: 20px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  color: aliceblue;
+  font-family: "Shantell Sans rev=1";
+}
+.main-div {
+  background-color: rgb(37, 37, 99); 
+   background-color: rgb(48, 48, 59);
+  width: 100%;
+}
+.upper-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid rgb(70, 70, 80);
+  height: 35vh;
+  width: 50%;
+  margin: auto;
+}
+.add-list {
+  display: flex;
+  justify-content: space-between;
+}
+.show-list {
+  margin: 10px;
+  overflow: scroll;
+}
+.show-list::-webkit-scrollbar {
+  display: none;
+}
+.add-list input[type="text"] {
+  text-align: center;
+  border: 2px solid rgb(70, 70, 80);
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  background-color: rgb(57, 57, 78);
+  flex: 12;
+  border-radius: 8px;
+  color: aliceblue;
+  margin-right: 20px;
+}
+#Add {
+  background-color: rgb(57, 57, 78);
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  border: 2px solid rgb(70, 70, 80);
+  outline: none;
+  flex: 1;
+  border-radius: 8px;
+}
+#Add:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.lower-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+}
+.active {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid rgb(70, 70, 80);
+  margin: 30px;
+  font-size: 25px;
+  background-color: rgb(48, 48, 59);
+  border-radius: 10px;
+  font-weight: 500;
+  color: aliceblue;
+  font-family: "Julee", cursive;
+}
+.active .fa-trash {
+  font-size: 50px;
+  color: red;
+}
+.badge {
+  position: relative;
+  top: -30px;
+  left: -18px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 50%;
+  background-color: wheat;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.active:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  background-color: #232c3a;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+@media screen and(max-width: 660x) {
+  .active,
+  .added,
+  .completed,
+  .remove {
+    font-size: 5px;
+    padding: 20px;
+  }
+  .lower-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

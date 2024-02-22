@@ -1,0 +1,25 @@
+export const Heading:string = " ToDo List ";
+export const Placeholder:string = " Add a Item ";
+export const Completed:string = " Completed ";
+export const Active:string = " Active ";
+export const Home:string = " Home ";
+export const Recycle:string = " Recycle ";
+export const Complete:string = " Complete ";
+export const Delete:string = " Delete ";
+export const RemoveAll:string = " RemoveAll ";
+export const Add:string = " + ";
+export const Colon:string = " : ";
+export const LogOut:string = " Log Out ";
+
+export const TodoLogo: string = "To-Do";
+export const WelcomeBack: string = "Welcome Back";
+export const NotRegistered: string = "Not Registered? ";
+export const SignUp: string = "SignUp";
+export const GetStarted: string = "Get Started";
+export const Account: string = "Already have an Account? ";
+export const SignIn: string = "Sign In";
+export const Name: string = "Name";
+export const Email: string = "Email";
+export const Password: string = "Password";
+export const ConfirmPassword: string = "confirm password";
+export const ErrorFields: string = "Fill in all fields !";

@@ -1,0 +1,48 @@
+.main-list {
+  background-color: rgb(48, 48, 59);
+  padding: 20px;
+}
+
+.list {
+  border: 2px solid rgb(163, 133, 133);
+  margin: auto;
+  width: 60%;
+  color: white;
+  margin-top: 50px;
+  height: 55vh;
+  border-radius: 20px;
+  text-align: center;
+  overflow: scroll;
+}
+
+.list ul {
+  display: inline-block;
+  text-align: left;
+  font-size: 20px;
+  text-transform: capitalize;
+  width: 40%;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(70, 70, 80);
+}
+
+.list-element {
+  flex: 8;
+  font-size: 30px;
+  font-family: "Julee", cursive;
+}
+
+.restore .fas {
+  flex: 2;
+}
+
+.fas:hover {
+  color: green;
+}
